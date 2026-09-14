@@ -1,0 +1,45 @@
+.headers {
+    max-height: 60px;
+}
+
+.nav-bar {
+    margin: 0;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bg);
+}
+
+.logo h1 {
+    margin: 0;
+    font-family: var(--heading);
+    font-weight: 500;
+    font-size: 150%;
+    color: var(--text-h);
+}
+
+.nav-bar ul{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-family: var(--heading);
+    font-weight: 500;
+    font-size: 100%;
+    color: var(--text-h);
+    transition: color 0.3s ease;
+}

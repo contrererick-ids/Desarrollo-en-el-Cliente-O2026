@@ -1,0 +1,83 @@
+.about-me-section {
+    margin: 0 15px 30px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid var(--border);
+
+}
+
+.about-me-section h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 200%;
+}
+
+.about-text p{
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--code-bg);
+    border-radius: 15px;
+    color: var(--text)
+}
+
+.experience-education-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.experience-list{
+    width: 50%;
+    padding: 30px;
+    background-color: var(--accent-bg);
+    border-radius: 15px;
+    text-align: left;
+}
+
+.experience-list h3{
+    margin: 0;
+    margin-bottom: 15px;
+    color: var(--text-h);
+}
+
+.experience-list h4{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.experience-list p{
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.education-list{
+    width: 50%;
+    padding: 30px;
+    background-color: var(--accent-bg);
+    border-radius: 15px;
+    text-align: left;
+
+}
+
+.education-list h3{
+    margin: 0;
+    margin-bottom: 15px;
+    color: var(--text-h)
+}
+
+.education-list h4{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.education-list p{
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    padding-left: 20px;
+}
