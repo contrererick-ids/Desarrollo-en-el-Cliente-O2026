@@ -1,0 +1,34 @@
+<div class="data-table">
+    <div class="user-list">
+        @if (!users) {
+            <p>Cargando...</p>
+        }
+        @if (users) {
+            @for(usuario of users; track usuario.name){
+                <button
+                  [class.selected]="selectedUser?.name === usuario.name"
+                  (click)="showUserInfoButton(usuario)">
+                  {{usuario.name}}
+                </button>
+            }
+        }
+    
+    </div>
+    
+    <div class="user-detail">
+        @if (!selectedUser){
+            <p>Select an User</p>
+    
+        }
+    
+        @if (selectedUser) {
+            <p><strong>Name:</strong> {{selectedUser.name}}</p>
+            <p><strong>Email:</strong> {{selectedUser.email}}</p>
+            <p><strong>Phone:</strong> {{selectedUser.phone}}</p>
+            <p><strong>Address:</strong> {{selectedUser.address}}</p>
+            <button id="clearSelectionButton" (click)="clearSelection()">Limpiar</button>
+        }
+    
+    </div>
+
+</div>
