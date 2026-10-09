@@ -1,0 +1,20 @@
+<div class="movie-card">
+    <div class="image-container">
+        <img src={{movie?.imgURL}} alt="img_not_found">
+    </div>
+    <div class="card-content">
+        <div class="card-header">
+            <div class="movie-title-and-director">
+                <p id="movie-title">{{movie?.title}}</p>
+                <p>{{movie?.director}}</p>
+            </div>
+            <div class="info-pills">
+                <p>{{movie?.genre}}</p>
+                <p>{{movie?.year}}</p>
+            </div>
+        </div>
+        <div class="card-description">
+            <p>{{movie?.description}}</p>
+        </div> 
+    </div>
+</div>
