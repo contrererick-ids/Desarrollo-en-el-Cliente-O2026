@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IMovie } from '../../interfaces/imovie';
 
 @Component({
   selector: 'app-movie-detail',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './movie-detail.html',
   styleUrl: './movie-detail.scss',
 })
-export class MovieDetail {}
+export class MovieDetail {
+
+  @Input() movie: IMovie | undefined = undefined;
+
+}

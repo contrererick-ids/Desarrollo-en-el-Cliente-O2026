@@ -1,11 +1,17 @@
-* {
-    --movies-catalog-bg: #028b80;
-}
-
 #movies-catalog-section {
     margin: 0;
     padding: 20px;
     background-color: var(--movies-catalog-bg);
+}
+
+#movies-search-bar {
+    margin: 10px 0px;
+    padding: 15px 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    font-family: var(--main-text-font);
+    color: var(--main-text-color);
 }
 
 #movies-catalog-grid {

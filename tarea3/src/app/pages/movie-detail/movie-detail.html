@@ -1,1 +1,14 @@
-<p>movie-detail works!</p>
+@if (!movie){
+    <p>Tenemos problemas para cargar esta págna en este momento</p>
+}
+@else if (movie) {
+    <div class="movie-details-section">
+        <div class="movie-header">
+            <h1>{{movie?.title}}</h1>
+        </div>
+        <div class="movie-descirption">
+    
+        </div>
+    
+    </div>>
+}
