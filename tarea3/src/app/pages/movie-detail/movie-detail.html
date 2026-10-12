@@ -1,15 +1,26 @@
-<a routerLink="/"> &lt; Regresar</a>
-
 @if (movie(); as movie) {
-    <div class="movie-details-section">
-        <div class="movie-header">
-            <h1>{{movie.title}}</h1>
+    <div id="movie-details-section">
+        <div class="return-button">
+            <a routerLink="/"> &lt; Regresar</a>
         </div>
-        <button (click)="toggleFavorite(movie)">
-            {{ favoritesService.isFavorite(movie.id) ? 'Quitar de favoritos' : 'Agregar a favoritos' }}
-        </button>
-        <div class="movie-description">
-
+        <div class="movie-header">
+            <div class="main-details">
+                <h1>{{movie.title}}</h1>
+                <h3>Director: {{movie.director}}</h3>
+                <h3>Año: {{movie.year}}</h3>
+                <h3>Género: {{movie.genre}}</h3>
+                <button (click)="toggleFavorite(movie)">
+                    @if (!favoritesService.isFavorite(movie.id)) {
+                        <i class="bi bi-star"></i>
+                    }@else {
+                        <i class="bi bi-star-fill"></i>
+                    }
+                </button>
+                <p>{{movie.description}}</p>
+            </div>
+            <div class="image-container">
+                <img src={{movie?.imgURL}} alt="img_not_found">
+            </div>
         </div>
     </div>
 }

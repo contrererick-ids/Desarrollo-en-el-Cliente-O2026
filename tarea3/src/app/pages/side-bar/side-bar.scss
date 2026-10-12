@@ -1,0 +1,24 @@
+#side-bar-section {
+    min-height: 800px;
+}
+
+ul {
+    margin-top: 40px;
+    list-style-type: none;
+    padding-left: 50px;
+    font-family: var(--main-text-font);
+}
+
+li {
+    display: flex;
+    gap: 15px;
+    margin: 0px 0px 15px;
+    font-size: 150%;
+    color: var(--highlight-bright-text-color);
+}
+
+a {
+    all: unset;
+    font-weight: bold;
+    cursor: pointer;
+}

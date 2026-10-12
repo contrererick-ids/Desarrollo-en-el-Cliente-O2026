@@ -1,8 +1,15 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
 .movie-card {
-    width: 300px;
-    height: 400px;
-    margin: 5px 5px 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     background-color: var(--card-bg);
     border: 1px solid var(--card-border-color);
     border-radius: 12px;
@@ -10,6 +17,7 @@
 }
 
 .image-container {
+    flex-shrink: 0;
     width: 100%;
     height: 200px;
     margin: 0;
@@ -17,62 +25,58 @@
     overflow: hidden;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    object-fit: cover;
-    object-position: center;
-}
-
 .card-content {
+    flex: 1;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .card-header {
-    width: 85%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
     text-align: left;
 }
 
-.card-header p {
-    margin: 0px 0px 5px;
-    font-family: var(--main-text-font);
-    font-size: 10px;
-    color: var(--main-text-color);
-    overflow: hidden;
+.movie-title-and-director {
+    min-width: 0;
 }
 
-#movie-title{
-    margin: 5px 0px 0px;
+.info-pills {
+    flex-shrink: 0;
+    text-align: right;
+}
+
+#movie-title {
+    margin: 5px 0 0;
     font-family: var(--headers-text-font);
     font-size: 20px;
     font-weight: bold;
     color: var(--headers-text-color);
-    overflow: hidde;
-}
-
-.info-pills {
-    width: 15%;
-}
-
-.card-description {
-    margin: 0;
-    padding: 0;
-    text-align: left;
+    overflow-wrap: anywhere;
 }
 
 .card-description p {
-    margin: 15px 0px 20px;
+    margin: 15px 0 20px;
     font-family: var(--main-text-font);
     font-size: 12px;
     color: var(--main-text-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.card-actions {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
 }
