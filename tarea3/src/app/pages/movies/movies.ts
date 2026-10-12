@@ -31,6 +31,7 @@ export class Movies {
       movie.director?.toLowerCase().includes(term) ||
       movie.producer?.toLowerCase().includes(term) ||
       movie.genre?.toLowerCase().includes(term) ||
+      movie.description?.toLowerCase().includes(term) ||
       String(movie.year).includes(term)
     );
   }
