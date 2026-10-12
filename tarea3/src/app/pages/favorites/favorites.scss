@@ -1,0 +1,20 @@
+#favorites-section {
+    min-height: 800px;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--movies-catalog-bg);
+    font-family: var(--main-text-font);
+}
+
+h2 {
+    padding: 0px 15px;
+
+}
+
+#favorites-grid {
+    margin: 10px 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}

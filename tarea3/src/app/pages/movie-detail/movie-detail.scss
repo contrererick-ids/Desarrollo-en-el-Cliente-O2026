@@ -1,0 +1,115 @@
+#movie-details-section {
+    min-height: 800px;
+    margin: 0;
+    padding: 15px 30px;
+    display: block;
+    background-color: var(--movies-catalog-bg);
+    justify-content: center;
+}
+
+.return-button {
+    margin: 10px 0px;
+}
+
+.return-button a {
+    all: unset;
+    padding: 8px;
+    background-color: var(--button-hover-bg);
+    border: 1px solid var(--button-border-color);
+    border-radius: 12px;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+    color: var(--highlight-bright-text-color);
+    cursor: pointer;
+}
+
+.return-button a:hover {
+    background-color: var(--button-light-bg);
+    font-weight: bold;
+    color: var(--highlight-green-text-color)
+}
+
+
+.movie-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    font-family: var(--main-text-font);
+}
+
+.main-details {
+    width: 50%;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-family: var(--headers-text-font);
+    font-size: 36px;
+}
+
+.details-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.details-info {
+    flex: 1;
+    min-width: 0;
+}
+
+h3 {
+    margin: 5px 0px 10px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 14px;
+}
+
+.image-container {
+    width: 50%;
+    height: 400px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.details-actions {
+    flex-shrink: 0;
+}
+
+.favorite-button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--button-border-color);
+    border-radius: 12px;
+    color: var(--highlight-bright-text-color);
+    cursor: pointer;
+}
+
+.favorite-button i {
+    font-size: 22px;
+}
+
+.favorite-button:hover {
+    background-color: var(--button-hover-bg);
+    border: 1px solid var(--button-border-hover-color);
+}

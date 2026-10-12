@@ -1,0 +1,21 @@
+<section id="movies-catalog-section">
+    <div id="movies-search-bar">
+        <label for="searchInput">Busca una película </label>
+        <input id="searchInput" [(ngModel)]="search" (input)="searchMovies()" type="text"
+            placeholder="Ingresa un título, un director, género u otra información">
+    </div>
+
+    <div id="movies-catalog-grid">
+        @if (!filteredMovies) {
+            <p>Esto está tardando más de lo usual. Por favor, inténtalo de nuevo más tarde.</p>
+        }
+        @else if (filteredMovies.length > 0) {
+            @for (movie of filteredMovies; track movie.id) {
+                <app-movie-card [movie]="movie"></app-movie-card>
+            }
+        }
+        @else {
+            <h3>No encontramos películas que coincidan con tu búsqueda.</h3>
+        }
+    </div>
+</section>

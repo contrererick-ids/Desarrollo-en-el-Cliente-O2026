@@ -1,0 +1,23 @@
+h1 {
+    margin: 0;
+    padding: 30px 0px;
+    text-align: center;
+    background-color: var(--filmapp-main-header-bg);
+    font-family: var(--headers-text-font);
+    font-style: italic;
+    font-size: 48px;
+    color: var(--highlight-bright-text-color)
+}
+
+#main-section {
+    display: flex;
+}
+
+#side-bar-section {
+    width: 20%;
+    background-color: var(--side-bar-bg);
+}
+
+#movies-components-section {
+    width: 80%;
+}
