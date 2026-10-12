@@ -8,8 +8,25 @@
 }
 
 .return-button {
-    margin: 10px;
+    margin: 10px 0px;
 }
+
+.return-button a {
+    all: unset;
+    padding: 8px;
+    border: 1px solid var(--button-border-color);
+    border-radius: 12px;
+    font-family: var(--main-text-font);
+    color: var(--highlight-bright-text-color);
+    cursor: pointer;
+}
+
+.return-button a:hover {
+    background-color: var(--button-hover-bg);
+    border: 1px solid var(--button-border-hover-color);
+    font-weight: bold;
+}
+
 
 .movie-header {
     display: flex;
