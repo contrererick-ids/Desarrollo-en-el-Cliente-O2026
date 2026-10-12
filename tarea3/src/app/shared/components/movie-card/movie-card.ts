@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { IMovie } from '../../../interfaces/imovie';
+import { IMovie } from '../../models/interfaces/imovie';
 
 @Component({
   selector: 'app-movie-card',

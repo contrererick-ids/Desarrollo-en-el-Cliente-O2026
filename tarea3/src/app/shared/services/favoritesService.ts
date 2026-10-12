@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { IMovie } from '../../interfaces/imovie';
+import { IMovie } from '../models/interfaces/imovie';
 
 @Injectable({ providedIn: 'root' })
 export class FavoritesService {

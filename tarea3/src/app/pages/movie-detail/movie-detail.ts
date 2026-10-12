@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
-import { IMovie } from '../../interfaces/imovie';
+import { IMovie } from '../../shared/models/interfaces/imovie';
 import { MovieService } from '../../shared/services/movieService';
 import { FavoritesService } from '../../shared/services/favoritesService';
 

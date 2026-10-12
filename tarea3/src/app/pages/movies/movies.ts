@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IMovie } from '../../interfaces/imovie';
+import { IMovie } from '../../shared/models/interfaces/imovie';
 import { MovieCard } from '../../shared/components/movie-card/movie-card';
 import { MovieService } from '../../shared/services/movieService';
 
