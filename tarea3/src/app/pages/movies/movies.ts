@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IMovie } from '../../interfaces/imovie';
 import { MovieCard } from '../../shared/components/movie-card/movie-card';
+import { MovieService } from '../../shared/services/movieService';
 
 @Component({
   selector: 'app-movies',
@@ -11,19 +12,15 @@ import { MovieCard } from '../../shared/components/movie-card/movie-card';
 })
 export class Movies {
 
-  @Input() moviesList: IMovie[] | undefined = undefined;
+  private movieService = inject(MovieService);
 
-  filteredMovies: IMovie[] | undefined = undefined;
+  moviesList: IMovie[] = this.movieService.getMovies();
+  filteredMovies: IMovie[] = this.moviesList;
   search: string = '';
 
-  ngOnChanges() {
-    this.filteredMovies = this.moviesList;
-  }
-
   searchMovies() {
-    if (!this.moviesList) return;
-
     const term = this.search.trim().toLowerCase();
+
     if (!term) {
       this.filteredMovies = this.moviesList;
       return;

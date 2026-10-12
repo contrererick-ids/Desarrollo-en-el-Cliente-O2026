@@ -1,14 +1,18 @@
-@if (!movie){
-    <p>Tenemos problemas para cargar esta págna en este momento</p>
-}
-@else if (movie) {
+<a routerLink="/"> &lt; Regresar</a>
+
+@if (movie(); as movie) {
     <div class="movie-details-section">
         <div class="movie-header">
-            <h1>{{movie?.title}}</h1>
+            <h1>{{movie.title}}</h1>
         </div>
-        <div class="movie-descirption">
-    
+        <button (click)="toggleFavorite(movie)">
+            {{ favoritesService.isFavorite(movie.id) ? 'Quitar de favoritos' : 'Agregar a favoritos' }}
+        </button>
+        <div class="movie-description">
+
         </div>
-    
-    </div>>
+    </div>
+}
+@else {
+    <p>No encontramos esta película.</p>
 }

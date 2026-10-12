@@ -15,7 +15,10 @@
         </div>
         <div class="card-description">
             <p>{{movie?.description}}</p>
-            <button>Ver detalle</button>
+            <button (click)="goToDetail()">Ver detalle</button>
+            @if (showRemoveButton) {
+                <button (click)="onRemove()">Quitar de favoritos</button>
+            }
         </div>
     </div>
 </div>

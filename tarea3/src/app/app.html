@@ -5,11 +5,10 @@
     <section id="side-bar-section">
       <app-side-bar></app-side-bar>
     </section>
+
     <section id="movies-components-section">
-      <app-movies [moviesList]="moviesList()"></app-movies>
+      <router-outlet></router-outlet>
     </section>
-
+    
   </section>
-
 </main>
-<router-outlet></router-outlet>

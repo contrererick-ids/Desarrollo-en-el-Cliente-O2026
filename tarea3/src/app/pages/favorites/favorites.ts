@@ -1,9 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MovieCard } from '../../shared/components/movie-card/movie-card';
+import { FavoritesService } from '../../shared/services/favoritesService';
 
 @Component({
   selector: 'app-favorites',
-  imports: [],
+  imports: [MovieCard],
   templateUrl: './favorites.html',
   styleUrl: './favorites.scss',
 })
-export class Favorites {}
+
+export class Favorites {
+
+  protected favoritesService = inject(FavoritesService);
+
+}
