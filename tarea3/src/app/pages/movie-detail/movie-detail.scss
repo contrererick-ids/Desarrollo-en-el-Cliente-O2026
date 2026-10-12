@@ -14,17 +14,19 @@
 .return-button a {
     all: unset;
     padding: 8px;
+    background-color: var(--button-hover-bg);
     border: 1px solid var(--button-border-color);
     border-radius: 12px;
     font-family: var(--main-text-font);
+    font-weight: bold;
     color: var(--highlight-bright-text-color);
     cursor: pointer;
 }
 
 .return-button a:hover {
-    background-color: var(--button-hover-bg);
-    border: 1px solid var(--button-border-hover-color);
+    background-color: var(--button-light-bg);
     font-weight: bold;
+    color: var(--highlight-green-text-color)
 }
 
 
@@ -45,6 +47,18 @@ h1 {
     text-align: center;
     font-family: var(--headers-text-font);
     font-size: 36px;
+}
+
+.details-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.details-info {
+    flex: 1;
+    min-width: 0;
 }
 
 h3 {
@@ -71,4 +85,31 @@ p {
     margin: 0;
     object-fit: cover;
     object-position: center;
+}
+
+.details-actions {
+    flex-shrink: 0;
+}
+
+.favorite-button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--button-border-color);
+    border-radius: 12px;
+    color: var(--highlight-bright-text-color);
+    cursor: pointer;
+}
+
+.favorite-button i {
+    font-size: 22px;
+}
+
+.favorite-button:hover {
+    background-color: var(--button-hover-bg);
+    border: 1px solid var(--button-border-hover-color);
 }

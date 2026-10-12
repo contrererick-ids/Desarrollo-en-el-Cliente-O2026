@@ -6,16 +6,24 @@
         <div class="movie-header">
             <div class="main-details">
                 <h1>{{movie.title}}</h1>
-                <h3>Director: {{movie.director}}</h3>
-                <h3>Año: {{movie.year}}</h3>
-                <h3>Género: {{movie.genre}}</h3>
-                <button (click)="toggleFavorite(movie)">
-                    @if (!favoritesService.isFavorite(movie.id)) {
-                        <i class="bi bi-star"></i>
-                    }@else {
-                        <i class="bi bi-star-fill"></i>
-                    }
-                </button>
+                <div class="details-row">
+                    <div class="details-info">
+                        <h3>Director: {{movie.director}}</h3>
+                        <h3>Año: {{movie.year}}</h3>
+                        <h3>Género: {{movie.genre}}</h3>
+                        <h3>Productor: {{movie.producer}}</h3>
+                    </div>
+                    <div class="details-actions">
+                        <button class="favorite-button"
+                                (click)="toggleFavorite(movie)">
+                            @if (!favoritesService.isFavorite(movie.id)) {
+                                <i class="bi bi-star"></i>
+                            } @else {
+                                <i class="bi bi-star-fill"></i>
+                            }
+                        </button>
+                    </div>
+                </div>
                 <p>{{movie.description}}</p>
             </div>
             <div class="image-container">

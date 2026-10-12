@@ -3,6 +3,12 @@
     margin: 0;
     padding: 20px;
     background-color: var(--movies-catalog-bg);
+    font-family: var(--main-text-font);
+}
+
+h2 {
+    padding: 0px 15px;
+
 }
 
 #favorites-grid {

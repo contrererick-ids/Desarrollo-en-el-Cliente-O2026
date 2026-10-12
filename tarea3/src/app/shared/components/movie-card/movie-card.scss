@@ -80,3 +80,19 @@
     justify-content: flex-start;
     gap: 8px;
 }
+
+.card-actions button {
+    padding: 8px 14px;
+    background-color: var(--side-bar-bg);
+    border: 1px solid var(--button-border-color);
+    border-radius: 12px;
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: var(--highlight-bright-text-color);
+    cursor: pointer;
+}
+
+.card-actions button:hover {
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border-color);
+}

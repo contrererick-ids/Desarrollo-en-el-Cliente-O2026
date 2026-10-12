@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    
+    /* Backgrounds and Color Palette */
+    --movies-catalog-bg: #028b80;
+    --side-bar-bg: #003a35;
+    --filmapp-main-header-bg: #001b19;
+
+    /* Font variables */
+    --main-text-font: Verdana;
+    --headers-text-font: Helvetica;
+    --main-text-color: rgb(20, 20, 20);
+    --highlight-bright-text-color: rgb(210, 210, 210);
+    --highlight-green-text-color: #003a35;
+    --headers-text-color: rgb(40, 40, 40);
+    
+    /* Card colors */
+    --card-bg: #eeeeee;
+    --card-border-color: #9e9e9e;
+    
+    /* Button and Input variables */
+    --button-bg: #028b80;
+    --button-light-bg: rgb(210, 210, 210);
+    --button-hover-bg: #003a35;
+    --button-border-color: #003a35;
+    --button-border-hover-color: rgb(210, 210, 210);
+    --input-bg: #003a35;
+    --input-border-color: rgb(210, 210, 210);
+}
